@@ -17,4 +17,4 @@ alias poweroff='sudo shutdown -h now'
 
 alias install='sudo apt-get install'
 
-openssl rand -base64 12
+alias password='openssl rand -base64 12'
