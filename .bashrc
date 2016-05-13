@@ -1,5 +1,5 @@
-source .env
-source .alias
+source ~/.env
+source ~/.alias
 
 function up(){
   for i in $(seq 1 $1); do
