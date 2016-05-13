@@ -2,11 +2,19 @@ md() {
     mkdir -p $1
     cd $1
 }
+alias mkdir='mkdir -p'
 
 alias lsd='ls -l|grep "^d"'
 alias ll='ls -laF'
 alias lt='ls -laFt'
 alias lth='ls -laFt|head -20'
+
+alias df='df -h'
+
+alias grep='grep --color=auto'
+
 alias poweroff='sudo shutdown -h now'
+
 alias install='sudo apt-get install'
-alias mkdir='mkdir -p'
+
+openssl rand -base64 12
