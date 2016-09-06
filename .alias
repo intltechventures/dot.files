@@ -17,4 +17,6 @@ alias poweroff='sudo shutdown -h now'
 
 alias install='sudo apt-get install'
 
-alias password='openssl rand -base64 12'
+alias password='openssl rand -base64 12' 
+
+# alias gitlog='log --graph --pretty=format:'%Cred%h%Creset %C(cyan)%an%Creset -%C(blue)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
