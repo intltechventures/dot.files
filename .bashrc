@@ -7,6 +7,7 @@ function up(){
   done
 }
 
+cd /D/gitRepository/git
 #export these variables so that they will be sent over SSH
 export GIT_AUTHOR_NAME="Kelvin D. Meeks"
 export GIT_COMMITTER_NAME="Kelvin D. Meeks"
