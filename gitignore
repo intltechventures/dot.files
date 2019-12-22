@@ -1,0 +1,10 @@
+.*.swp
+*.gch
+.swp
+.*.swo
+*.scratch.*
+.DS_Store
+doc/tags
+.idea
+.tern-project
+docker-compose.prod-test.yml

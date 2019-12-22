@@ -7,6 +7,12 @@ function up(){
   done
 }
 
+
+function glossary(){
+    cd /D/gitRepository/git/Consulting.Project.Tools
+    vi Glossary.md
+}
+
 function dev(){
 	cd /D/gitRepository/git
 }

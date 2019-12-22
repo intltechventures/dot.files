@@ -1,0 +1,6 @@
+alias dcp='docker-compose'
+alias g="git"
+alias npi="npm install"
+alias tlf="tail -f"
+
+

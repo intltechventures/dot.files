@@ -2,48 +2,65 @@ map j gj
 map k gk
 
 set confirm
+set nocompatible								 	" dump the old fashioned vi support!
+set backspace=indent,eol,start 						" allow backspacing over everything in insert mode
+set history=100                						" keep 100 lines of command line history
+set ruler										 	" show the cursor position all the time
+set mouse=a 										" enable the mouse
+set lazyredraw                 						" don't update the display while executing macros
+set showmode                   						" so you know what mode you are in
+set laststatus=2               						" always put a status line in.
 
-set ruler
-" line numbers
-set nu
+set ch=2                       						" set command line 2 lines high
+set nowrap                     						" no line wrapping 
+
+" == Indentation ==
+set shiftwidth=2               						" round indent actions to multiple of 2
+set shiftround
+set softtabstop=2              						" soft tabs = 2 spaces 
+set tabstop=2                  						" tabs = 2 spaces
+set expandtab                  						" expand tabs to spaces
+set smartindent
+set smarttab
+set autoindent
+
+set incsearch                  						" do incremental searching
+set hlsearch                   						" highlight search terms
+
+set hidden
+
+set ignorecase										" case insensitive search
+set smartcase
+
 
 set wildmode=list:longest,full
 set wildmenu
-
-set incsearch
-set hidden
+set wildignore+=*.pui,*.prj,*.aux,*.log,*.class		" ignore these when completing file or directory names
 
 set splitright
 set splitbelow
-set shiftround
 
 set nostartofline
 
-" == Indentation ==
-set shiftwidth=2
-set tabstop=2
-set softtabstop=2
-set expandtab
-set smartindent
-set smarttab
-set tabstop=4
-set autoindent
-filetype indent on
+filetype plugin indent on							" enable file type detection
 filetype plugin on
 
-set ttyfast
+set ttyfast											" faster terminal updates
 set fileformats=unix,dos
 set fileformat=unix
 
-set wildignore+=*.aux,*.log,*.class
-
-" Highlight search terms
-set hlsearch
-
 set shortmess+=I
 set nospell
-set ignorecase
-set smartcase
 
 set fileencodings=utf-8
 set encoding=utf-8
+
+set nu												" enable line numbers
+set showmatch                  						" show matching parenthesis
+syntax on                      						" enable syntax highlighting
+set t_Co=256
+" colorscheme blueshift
+
+
+" Idea Sources
+" https://github.com/ericjang/vimrc/blob/master/.vimrc
