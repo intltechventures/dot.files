@@ -14,8 +14,14 @@ function glossary(){
 }
 
 function dev(){
-	cd /D/gitRepository/git
+    cd /D/gitRepository/git
 }
+
+
+function goDot(){
+  cd /D/gitRepository/git/dot.files
+}
+
 
 #export these variables so that they will be sent over SSH
 export GIT_AUTHOR_NAME="Kelvin D. Meeks"

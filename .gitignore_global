@@ -1,6 +1,10 @@
 
 bin/
 tmp/
+tmp/**/*
+/log
+log/*.log
+/node_modules/
 *.tmp
 *.bak
 *.swp

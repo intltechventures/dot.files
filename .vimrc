@@ -1,9 +1,14 @@
 syntax on                      						" enable syntax highlighting
 set ttyfast											          " faster terminal updates
 
+" Additional idea Sources
+"   https://github.com/ericjang/vimrc/blob/master/.vimrc
+"   https://github.com/whatisinternet/dotfiles/blob/master/vimrc
+"   https://github.com/NullMode/vim/blob/master/.vimrc
+
 
 " https://vi.stackexchange.com/questions/12104/what-does-set-background-dark-do
-set background=dark									      " Default to dark
+" set background=lightblue						      " Default to dark
 
 
 map j gj
@@ -25,12 +30,16 @@ set nowrap                     						" no line wrapping
 " == Indentation ==
 set shiftwidth=2               						" round indent actions to multiple of 2
 set shiftround
-set softtabstop=2              						" soft tabs = 2 spaces 
-set tabstop=2                  						" tabs = 2 spaces
-set expandtab                  						" expand tabs to spaces
+
+
 set smartindent
 set smarttab
 set autoindent
+
+set tabstop=2                  						" tabs = 2 spaces
+set softtabstop=2              						" soft tabs = 2 spaces 
+set expandtab                  						" expand tabs to spaces
+
 
 set incsearch                  						" do incremental searching
 set hlsearch                   						" highlight search terms
@@ -75,10 +84,8 @@ set t_Co=256
 
 
 " Make it obvious where 80 characters is
-set textwidth=80
-set colorcolumn=+1
+set colorcolumn=80
+     
 
-
-" Additional idea Sources
-"   https://github.com/ericjang/vimrc/blob/master/.vimrc
-"   https://github.com/whatisinternet/dotfiles/blob/master/vimrc
+" Disable auto line breaking
+set textwidth=0 wrapmargin=0    
