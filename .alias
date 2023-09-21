@@ -9,6 +9,8 @@ alias ll='ls -laF'
 alias lt='ls -laFt'
 alias lth='ls -laFt|head -20'
 
+alias myls="ls -lsaSr --block-size=M"
+
 alias df='df -h'
 
 alias grep='grep --color=auto'

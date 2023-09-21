@@ -5,7 +5,7 @@ set ttyfast											          " faster terminal updates
 "   https://github.com/ericjang/vimrc/blob/master/.vimrc
 "   https://github.com/whatisinternet/dotfiles/blob/master/vimrc
 "   https://github.com/NullMode/vim/blob/master/.vimrc
-
+"   https://www.reddit.com/r/vim/comments/11ntbmv/whats_your_vimrc_setup_for_2023/
 
 " https://vi.stackexchange.com/questions/12104/what-does-set-background-dark-do
 " set background=lightblue						      " Default to dark
@@ -89,3 +89,8 @@ set colorcolumn=80
 
 " Disable auto line breaking
 set textwidth=0 wrapmargin=0    
+
+
+" https://stackoverflow.com/questions/56052/best-way-to-insert-timestamp-in-vim/22578234#22578234
+command Date execute "normal i<C-R>=strftime('%F %T')<CR><ESC>"
+
