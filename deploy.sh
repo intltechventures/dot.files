@@ -1,4 +1,5 @@
 cp .alias ~/.
+cp aliases ~/.
 cp .bashrc ~/.
 cp .vimrc ~/.
 cp .env ~/.
