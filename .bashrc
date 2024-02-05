@@ -11,17 +11,17 @@ function up(){
 
 
 function glossary(){
-    cd /D/gitRepository/git/Consulting.Project.Tools
+    cd /C/gitRepository/git/Consulting.Project.Tools
     vi Glossary.md
 }
 
 function dev(){
-    cd /D/gitRepository/git
+    cd /C/gitRepository/git
 }
 
 
 function goDot(){
-  cd /D/gitRepository/git/dot.files
+  cd /C/gitRepository/git/dot.files
 }
 
 
