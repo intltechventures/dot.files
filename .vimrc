@@ -6,6 +6,7 @@ set ttyfast											          " faster terminal updates
 "   https://github.com/whatisinternet/dotfiles/blob/master/vimrc
 "   https://github.com/NullMode/vim/blob/master/.vimrc
 "   https://www.reddit.com/r/vim/comments/11ntbmv/whats_your_vimrc_setup_for_2023/
+"   https://github.com/april/.dotfiles/blob/main/.vimrc
 
 " https://vi.stackexchange.com/questions/12104/what-does-set-background-dark-do
 " set background=lightblue						      " Default to dark
@@ -18,7 +19,10 @@ set confirm
 set nocompatible								 	        " dump the old fashioned vi support!
 set backspace=indent,eol,start 						" allow backspacing over everything in insert mode
 set history=100                						" keep 100 lines of command line history
+
 set ruler										 	            " show the cursor position all the time
+set rulerformat=%l/%L(%p%%),%c            " a better ruler
+
 set mouse=a 										          " enable the mouse
 set lazyredraw                 						" don't update the display while executing macros
 set showmode                   						" so you know what mode you are in
@@ -36,9 +40,11 @@ set smartindent
 set smarttab
 set autoindent
 
+set shiftwidth=2                          " when using >, indent as much as my tabstop
 set tabstop=2                  						" tabs = 2 spaces
 set softtabstop=2              						" soft tabs = 2 spaces 
 set expandtab                  						" expand tabs to spaces
+set ai                                    " autoindent what I've indented myself
 
 
 set incsearch                  						" do incremental searching
