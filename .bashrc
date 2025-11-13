@@ -10,18 +10,22 @@ function up(){
 }
 
 
-function glossary(){
+function goGitMyGlossary(){
     cd /C/gitRepository/git/Consulting.Project.Tools
     vi Glossary.md
 }
 
-function dev(){
+function goGitMyDev(){
     cd /C/gitRepository/git
 }
 
 
-function goDot(){
+function goGitMyDotfiles(){
   cd /C/gitRepository/git/dot.files
+}
+
+function goGitThirdPartyClones(){
+    cd /C/gitRepository/thirdparty.github.clones
 }
 
 
