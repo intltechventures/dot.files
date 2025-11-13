@@ -12,7 +12,7 @@ function up(){
 
 function goGitMyGlossary(){
     cd /C/gitRepository/git/Consulting.Project.Tools
-    vi Glossary.md
+    vi Abberviations.md
 }
 
 function goGitMyDev(){
