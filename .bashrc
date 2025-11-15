@@ -10,7 +10,7 @@ function up(){
 }
 
 
-function goGitMyGlossary(){
+function goGitMyAbbreviations(){
     cd /C/gitRepository/git/Consulting.Project.Tools
     vi Abbreviations.md
 }
@@ -22,10 +22,19 @@ function goGitMyDev(){
 
 function goGitMyDotfiles(){
   cd /C/gitRepository/git/dot.files
+  ls -lsa 
 }
 
 function goGitThirdPartyClones(){
     cd /C/gitRepository/thirdparty.github.clones
+}
+
+
+function goListMyFunctions(){
+	echo "goGitMyAbbreviations"
+	echo "goGitMyDev"
+	echo "goGitMyDotfiles"
+	echo "goGitThirdPartyFunctions"
 }
 
 
