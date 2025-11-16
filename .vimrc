@@ -100,3 +100,12 @@ set textwidth=0 wrapmargin=0
 " https://stackoverflow.com/questions/56052/best-way-to-insert-timestamp-in-vim/22578234#22578234
 command Date execute "normal i<C-R>=strftime('%F %T')<CR><ESC>"
 
+
+if has("autocmd")
+	""
+	" Markdown Configuration
+	""
+	" override Markdown tab settings
+	autocmd FileType markdown set tabstop=2
+endif
+
